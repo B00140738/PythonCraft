@@ -5,13 +5,14 @@ from terrain.create_chunk import create_chunk
 
 app = Ursina()
 player = FirstPersonController()
+player.y = 10
 Sky()
 
 noise = PerlinNoise(octaves=2, seed=1)
 
 chunk_size = 8
 ground_depth = 8
-world_size = 2
+world_size = 3
 
 chunks = []
 
