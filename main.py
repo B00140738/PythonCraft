@@ -6,19 +6,20 @@ app = Ursina()
 player = FirstPersonController()
 Sky()
 
-boxes = []
+chunk_size = 8
 
-create_chunk(chunk_size=8)
+# Call the create_chunk function from create_chunk.py
+boxes = create_chunk(chunk_size)
 
 def input(key):
-  for box in boxes:
-    if box.hovered:
-      if key == 'right mouse down':
-        new = Button(color=color.white, model='cube', position=box.position + mouse.normal, texture='grass.png', parent=scene, origin_y=0.5)
-        boxes.append(new)
+    for box in boxes:
+        if box.hovered:
+            if key == 'right mouse down':
+                new = Button(color=color.white, model='cube', position=box.position + mouse.normal, texture='textures/grass.png', parent=scene, origin_y=0.5)
+                boxes.append(new)
 
-      if key == 'left mouse down':
-        boxes.remove(box)
-        destroy(box)
+            if key == 'left mouse down':
+                boxes.remove(box)
+                destroy(box)
 
 app.run()
