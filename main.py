@@ -6,7 +6,7 @@ app = Ursina()
 player = FirstPersonController()
 Sky()
 
-chunk_size = 8
+chunk_size = 12
 
 # Call the create_chunk function from create_chunk.py
 boxes = create_chunk(chunk_size)
