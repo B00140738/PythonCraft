@@ -1,3 +1,4 @@
+from perlin_noise import PerlinNoise
 from ursina import Button, color, scene
 
 def create_chunk(size):

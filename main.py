@@ -1,3 +1,4 @@
+from perlin_noise import PerlinNoise
 from ursina import *
 from ursina.prefabs.first_person_controller import FirstPersonController
 from terrain.create_chunk import create_chunk
@@ -5,6 +6,8 @@ from terrain.create_chunk import create_chunk
 app = Ursina()
 player = FirstPersonController()
 Sky()
+
+noise = PerlinNoise(octaves=2, seed=1)
 
 chunk_size = 10
 
