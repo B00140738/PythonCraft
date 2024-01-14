@@ -5,7 +5,7 @@ from terrain.create_chunk import create_chunk
 
 app = Ursina()
 player = FirstPersonController()
-player.y = 10
+player.y = 15
 Sky()
 
 #TODO: Keep settings as 4, 2? higher amplitude = more reakistic terrain?
