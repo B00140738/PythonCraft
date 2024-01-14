@@ -8,10 +8,11 @@ player = FirstPersonController()
 player.y = 10
 Sky()
 
-noise = PerlinNoise(octaves=2, seed=1)
+#TODO: Keep settings as 4, 2? higher amplitude = more reakistic terrain?
+noise = PerlinNoise(octaves=4, seed=2)
 
-chunk_size = 8
-ground_depth = 8
+chunk_size = 6
+ground_depth = 6
 world_size = 3
 
 chunks = []
