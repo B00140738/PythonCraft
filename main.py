@@ -8,12 +8,12 @@ player = FirstPersonController()
 player.y = 10
 Sky()
 
-#TODO: Keep settings as 4, 2? higher amplitude = more reakistic terrain?
+#TODO: Keep settings as 4, 2? higher amplitude = more realistic terrain?
 noise = PerlinNoise(octaves=4, seed=2)
 
 chunk_size = 6
-ground_depth = 6
-world_size = 3
+ground_depth = 1 #TODO: check this out... it should change terrain but it's not?? If no impact, leave at 1.
+world_size = 6
 
 chunks = []
 
